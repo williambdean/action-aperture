@@ -1,4 +1,4 @@
-install: 
+install:
 	uv tool install . --force --no-cache
 
 lint:
@@ -7,5 +7,5 @@ lint:
 format:
 	uvx ruff format .
 
-test: 
+test:
 	uv run --group dev pytest
