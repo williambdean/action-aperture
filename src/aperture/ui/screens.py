@@ -296,11 +296,13 @@ class JobViewScreen(Screen):
 
     #job-list {
         border: solid $accent;
+        width: 25%;
     }
 
     #detail-panel {
         border: solid $secondary;
         padding: 1 1;
+        width: 75%;
     }
 
     #mode-buttons {
