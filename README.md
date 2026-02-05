@@ -31,7 +31,7 @@ uv tool install .
 
 ## Prerequisites
 
-- Python 3.13+
+- Python 3.10+
 - [GitHub CLI (`gh`)](https://cli.github.com/) installed and authenticated
 
 ## Usage
