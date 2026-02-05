@@ -1,0 +1,605 @@
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	﻿2026-01-06T09:19:28.1564614Z Current runner version: '2.330.0'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1599202Z ##[group]Runner Image Provisioner
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1600431Z Hosted Compute Agent
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1601521Z Version: 20251211.462
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1602672Z Commit: 6cbad8c2bb55d58165063d031ccabf57e2d2db61
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1603892Z Build Date: 2025-12-11T16:28:49Z
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1604871Z Worker ID: {fb180102-14a8-4859-911c-4050a15e46c1}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1606069Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1606861Z ##[group]Operating System
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1607748Z Ubuntu
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1608575Z 24.04.3
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1609305Z LTS
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1610153Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1611227Z ##[group]Runner Image
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1612187Z Image: ubuntu-24.04
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1613081Z Version: 20251215.174.1
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1614945Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251215.174/images/ubuntu/Ubuntu2404-Readme.md
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1617883Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251215.174
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1619779Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1621880Z ##[group]GITHUB_TOKEN Permissions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1625161Z Contents: read
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1626117Z Metadata: read
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1626896Z Packages: read
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1628362Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1631592Z Secret source: Actions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.1633144Z Prepare workflow directory
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.2107312Z Prepare all required actions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.2165334Z Getting action download info
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.4954694Z Download action repository 'actions/checkout@v6' (SHA:8e8c483db84b4bee98b60c0593521ed34d9990e8)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.5894906Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:28.6721499Z Download action repository 'codecov/codecov-action@v5.5.2' (SHA:671740ac38dd9b0130fbe1cec585b89eea48d3de)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.1429825Z Getting action download info
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.2648857Z Download action repository 'actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea' (SHA:60a0d83039c74a4aee543508d2ffcb1c3799cdea)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6321745Z Complete job name: test (ubuntu-latest, 3.13)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6970537Z ##[group]Run actions/checkout@v6
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6971786Z with:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6972444Z   repository: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6973309Z   token: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6973915Z   ssh-strict: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6974544Z   ssh-user: git
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6975179Z   persist-credentials: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6975837Z   clean: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6976481Z   sparse-checkout-cone-mode: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6977389Z   fetch-depth: 1
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6978138Z   fetch-tags: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6978779Z   show-progress: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6979683Z   lfs: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6980292Z   submodules: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6980919Z   set-safe-directory: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.6982054Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.7944769Z Syncing repository: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.7946947Z ##[group]Getting Git version info
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.7947847Z Working directory is '/home/runner/work/conjugate/conjugate'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.7949336Z [command]/usr/bin/git version
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.7993721Z git version 2.52.0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8015608Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8031992Z Temporarily overriding HOME='/home/runner/work/_temp/c5e29923-bad4-4bed-8be7-7e88c22e9418' before making global git config changes
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8034237Z Adding repository directory to the temporary git global config as a safe directory
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8038218Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/conjugate/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8080189Z Deleting the contents of '/home/runner/work/conjugate/conjugate'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8084564Z ##[group]Initializing the repository
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8089257Z [command]/usr/bin/git init /home/runner/work/conjugate/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8198612Z hint: Using 'master' as the name for the initial branch. This default branch name
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8199839Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8201705Z hint: to use in all of your new repositories, which will suppress this warning,
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8202649Z hint: call:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8203919Z hint:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8205133Z hint: 	git config --global init.defaultBranch <name>
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8206468Z hint:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8207748Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8209462Z hint: 'development'. The just-created branch can be renamed via this command:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8210890Z hint:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8212123Z hint: 	git branch -m <name>
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8213216Z hint:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8214564Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8216428Z Initialized empty Git repository in /home/runner/work/conjugate/conjugate/.git/
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8219562Z [command]/usr/bin/git remote add origin https://github.com/williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8253126Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8254907Z ##[group]Disabling automatic garbage collection
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8256722Z [command]/usr/bin/git config --local gc.auto 0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8286098Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8287839Z ##[group]Setting up auth
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8289204Z Removing SSH command configuration
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8294332Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8325435Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8643320Z Removing HTTP extra header
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8648861Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8681776Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8898616Z Removing includeIf entries pointing to credentials config files
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8904989Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.8937470Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9163035Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9199861Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/conjugate/conjugate/.git.path /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9229188Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/conjugate/conjugate/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9257593Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9287498Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9313060Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9314129Z ##[group]Fetching the repository
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:29.9321721Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4b272041f3d38b67741de3b54da138d747e4e341:refs/remotes/origin/paper
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4685792Z From https://github.com/williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4687015Z  * [new ref]         4b272041f3d38b67741de3b54da138d747e4e341 -> origin/paper
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4717803Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4718536Z ##[group]Determining the checkout info
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4719790Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4724780Z [command]/usr/bin/git sparse-checkout disable
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4766515Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4793628Z ##[group]Checking out the ref
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.4797871Z [command]/usr/bin/git checkout --progress --force -B paper refs/remotes/origin/paper
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5335259Z Switched to a new branch 'paper'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5336028Z branch 'paper' set up to track 'origin/paper'.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5345672Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5385701Z [command]/usr/bin/git log -1 --format=%H
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5408950Z 4b272041f3d38b67741de3b54da138d747e4e341
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5711741Z ##[group]Run actions/setup-python@v5
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5712238Z with:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5712581Z   python-version: 3.13
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5712940Z   check-latest: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5713433Z   token: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5713760Z   update-environment: true
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5714147Z   allow-prereleases: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5714514Z   freethreaded: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.5714846Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7367163Z ##[group]Installed versions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7471385Z Successfully set up CPython (3.13.11)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7472587Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7594561Z ##[group]Run python -m pip install --upgrade pip
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7595155Z [36;1mpython -m pip install --upgrade pip[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7595632Z [36;1mpip install tox tox-gh-actions[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7640852Z shell: /usr/bin/bash -e {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7641491Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7641883Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7642502Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7643128Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7643666Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7644214Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7644742Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:30.7645192Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.0233705Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages (25.3)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.7210447Z Collecting tox
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.8226971Z   Downloading tox-4.33.0-py3-none-any.whl.metadata (3.5 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.8409407Z Collecting tox-gh-actions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.8639355Z   Downloading tox_gh_actions-3.5.0-py3-none-any.whl.metadata (12 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.8900921Z Collecting cachetools>=6.2.4 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9090641Z   Downloading cachetools-6.2.4-py3-none-any.whl.metadata (5.6 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9214037Z Collecting chardet>=5.2 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9403282Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9556292Z Collecting colorama>=0.4.6 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9747158Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:33.9989347Z Collecting filelock>=3.20.2 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.0178341Z   Downloading filelock-3.20.2-py3-none-any.whl.metadata (2.1 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.0329666Z Collecting packaging>=25 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.0518507Z   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.0685442Z Collecting platformdirs>=4.5.1 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.0873075Z   Downloading platformdirs-4.5.1-py3-none-any.whl.metadata (12 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.1041625Z Collecting pluggy>=1.6 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.1230121Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.1364504Z Collecting pyproject-api>=1.10 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.1552971Z   Downloading pyproject_api-1.10.0-py3-none-any.whl.metadata (2.7 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.1989652Z Collecting virtualenv>=20.35.4 (from tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.2179022Z   Downloading virtualenv-20.35.4-py3-none-any.whl.metadata (4.6 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.2577976Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.35.4->tox)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.2766281Z   Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.3084501Z Downloading tox-4.33.0-py3-none-any.whl (176 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.3669139Z Downloading tox_gh_actions-3.5.0-py3-none-any.whl (9.9 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.3880308Z Downloading cachetools-6.2.4-py3-none-any.whl (11 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.4189777Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.4476163Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.4683532Z Downloading filelock-3.20.2-py3-none-any.whl (16 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.4894533Z Downloading packaging-25.0-py3-none-any.whl (66 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.5105383Z Downloading platformdirs-4.5.1-py3-none-any.whl (18 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.5321649Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.5533527Z Downloading pyproject_api-1.10.0-py3-none-any.whl (13 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.5745142Z Downloading virtualenv-20.35.4-py3-none-any.whl (6.0 MB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.6558611Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 76.6 MB/s  0:00:00
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.6748569Z Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:34.7214469Z Installing collected packages: distlib, pluggy, platformdirs, packaging, filelock, colorama, chardet, cachetools, virtualenv, pyproject-api, tox, tox-gh-actions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4342212Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4364725Z Successfully installed cachetools-6.2.4 chardet-5.2.0 colorama-0.4.6 distlib-0.4.0 filelock-3.20.2 packaging-25.0 platformdirs-4.5.1 pluggy-1.6.0 pyproject-api-1.10.0 tox-4.33.0 tox-gh-actions-3.5.0 virtualenv-20.35.4
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4965890Z ##[group]Run tox
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4966139Z [36;1mtox[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4998445Z shell: /usr/bin/bash -e {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4998670Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4998917Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4999334Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.4999728Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.5000072Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.5000408Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.5000750Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:35.5001188Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:36.3675374Z py: install_deps> python -I -m pip install pypika pytest pytest-cov pytest-mpl
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:48.8598300Z .pkg: install_requires> python -I -m pip install hatchling
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.4088901Z .pkg: _optional_hooks> python /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyproject_api/_backend.py True hatchling.build
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.4417729Z .pkg: get_requires_for_build_sdist> python /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyproject_api/_backend.py True hatchling.build
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.4844382Z .pkg: freeze> python -m pip freeze --all
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.7204214Z .pkg: hatchling==1.28.0,packaging==25.0,pathspec==1.0.0,pip==25.3,pluggy==1.6.0,trove-classifiers==2025.12.1.14
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.7208461Z .pkg: build_sdist> python /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyproject_api/_backend.py True hatchling.build
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:50.7838739Z py: install_package_deps> python -I -m pip install matplotlib numpy packaging scipy
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:56.6980440Z py: install_package> python -I -m pip install --force-reinstall --no-deps /home/runner/work/conjugate/conjugate/.tox/.tmp/package/1/conjugate_models-0.14.0.tar.gz
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:58.1762871Z py: freeze> python -m pip freeze --all
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:58.4268902Z py: conjugate-models @ file:///home/runner/work/conjugate/conjugate/.tox/.tmp/package/1/conjugate_models-0.14.0.tar.gz#sha256=af7835ea1f5fa3def5dfd2385ac8d60876c85d14e8ddbebfcb0a9795731c1113,contourpy==1.3.3,coverage==7.13.1,cycler==0.12.1,fonttools==4.61.1,iniconfig==2.3.0,Jinja2==3.1.6,kiwisolver==1.4.9,MarkupSafe==3.0.3,matplotlib==3.10.8,numpy==2.4.0,packaging==25.0,pillow==12.1.0,pip==25.3,pluggy==1.6.0,Pygments==2.19.2,pyparsing==3.3.1,PyPika==0.48.9,pytest==9.0.2,pytest-cov==7.0.0,pytest-mpl==0.18.0,python-dateutil==2.9.0.post0,scipy==1.16.3,six==1.17.0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:58.4275110Z ##[group]tox: py
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:19:58.4275453Z py: commands[0]> pytest tests
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5123580Z ============================= test session starts ==============================
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5124370Z platform linux -- Python 3.13.11, pytest-9.0.2, pluggy-1.6.0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5125118Z cachedir: .tox/py/.pytest_cache
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5125572Z Matplotlib: 3.10.8
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5126560Z Freetype: 2.6.1
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5127492Z rootdir: /home/runner/work/conjugate/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5128144Z configfile: pyproject.toml
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5128644Z plugins: mpl-0.18.0, cov-7.0.0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5129168Z collected 240 items
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.5129450Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.6658135Z tests/test_distributions.py ...............s............................ [ 18%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:01.8234927Z ......................................................                   [ 40%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:05.6046515Z tests/test_example_plots.py ...................                          [ 48%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:05.6696149Z tests/test_helpers.py ...................................ss............. [ 69%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:05.6781140Z ......                                                                   [ 72%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:05.6888225Z tests/test_interactive.py .......                                        [ 75%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.1411225Z tests/test_models.py ................................................... [ 96%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.1452137Z ..                                                                       [ 97%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.1559809Z tests/test_plot.py ......                                                [ 99%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7194564Z tests/test_version.py .                                                  [100%]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7195029Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7195228Z ================================ tests coverage ================================
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7195832Z _______________ coverage: platform linux, python 3.13.11-final-0 _______________
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7196245Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7196412Z Name                           Stmts   Miss  Cover   Missing
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7196996Z ------------------------------------------------------------
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7197478Z conjugate/__init__.py              1      0   100%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7197936Z conjugate/_beta_geometric.py      27      0   100%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7198414Z conjugate/_compound_gamma.py      17      0   100%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7198880Z conjugate/_typing.py               6      0   100%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7199614Z conjugate/distributions.py       470     21    96%   77-78, 82, 181, 206, 224, 269, 321, 373, 399, 406-407, 609, 612, 622, 826, 865, 903, 962, 991, 1274
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7200487Z conjugate/helpers.py             240     25    90%   60, 65, 80, 85, 127-152, 155, 158, 161, 164, 403-408, 559-564
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7201502Z conjugate/interactive.py          56     10    82%   72, 82, 104, 113-118, 122-127, 142
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7202255Z conjugate/models.py              340     19    94%   444-445, 453, 468-470, 490, 498, 573, 1030, 1109, 1292, 1724-1729, 1751, 1914-1917
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7202949Z conjugate/plot.py                152      4    97%   48, 123, 203, 384
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7203457Z conjugate/slice.py                13      0   100%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7203907Z ------------------------------------------------------------
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7204701Z TOTAL                           1322     79    94%
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7205107Z Coverage XML written to file coverage.xml
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:06.7205548Z ======================== 237 passed, 3 skipped in 7.26s ========================
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.0967997Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.0968935Z .pkg: _exit> python /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyproject_api/_backend.py True hatchling.build
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1152620Z   py: OK (30.93=setup[22.26]+cmd[8.67] seconds)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1152962Z   congratulations :) (30.96 seconds)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1731831Z ##[group]Run codecov/codecov-action@v5.5.2
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1732130Z with:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1732488Z   token: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1732665Z   name: 3.13
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1732844Z   slug: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1733068Z   fail_ci_if_error: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1733274Z   disable_file_fixes: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1733470Z   disable_search: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1733685Z   disable_safe_directory: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1733890Z   disable_telem: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1734078Z   dry_run: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1734255Z   git_service: github
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1734436Z   gcov_executable: gcov
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1734633Z   handle_no_reports_found: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1734860Z   recurse_submodules: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1735068Z   run_command: upload-coverage
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1735290Z   skip_validation: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1735503Z   use_legacy_upload_endpoint: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1735735Z   use_oidc: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1735945Z   use_pypi: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1736112Z   verbose: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1736284Z   version: latest
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1736450Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1736675Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1737077Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1737460Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1737799Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1738139Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1738477Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1738753Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1810303Z ##[group]Run missing_deps=""
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1810563Z [36;1mmissing_deps=""[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1810759Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1811130Z [36;1m# Check for always-required commands[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1811424Z [36;1mfor cmd in bash git curl; do[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1811699Z [36;1m  if ! command -v "$cmd" >/dev/null 2>&1; then[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1811985Z [36;1m    missing_deps="$missing_deps $cmd"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1812229Z [36;1m  fi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1812390Z [36;1mdone[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1812553Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1812786Z [36;1m# Check for gpg only if validation is not being skipped[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1813090Z [36;1mif [ "false" != "true" ]; then[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1813359Z [36;1m  if ! command -v gpg >/dev/null 2>&1; then[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1813641Z [36;1m    missing_deps="$missing_deps gpg"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1813875Z [36;1m  fi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1814040Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1814194Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1814389Z [36;1m# Report missing required dependencies[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1814668Z [36;1mif [ -n "$missing_deps" ]; then[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1815033Z [36;1m  echo "Error: The following required dependencies are missing:$missing_deps"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1815499Z [36;1m  echo "Please install these dependencies before using this action."[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1815841Z [36;1m  exit 1[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1816011Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1816174Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1816414Z [36;1mecho "All required system dependencies are available."[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1985632Z shell: /usr/bin/sh -e {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1986037Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1986330Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1986814Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1987285Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1987708Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1988120Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1988538Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.1989038Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2055625Z All required system dependencies are available.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2103170Z ##[group]Run CC_ACTION_VERSION=$(cat ${GITHUB_ACTION_PATH}/src/version)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2103641Z [36;1mCC_ACTION_VERSION=$(cat ${GITHUB_ACTION_PATH}/src/version)[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2104070Z [36;1mecho -e "\033[0;32m==>\033[0m Running Action version $CC_ACTION_VERSION"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2134098Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2134415Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2134654Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2135047Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2135446Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2135794Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2136140Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2136497Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2136792Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2198940Z [0;32m==>[0m Running Action version 5.5.2
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2224691Z ##[group]Run git config --global --add safe.directory "/home/runner/work/conjugate/conjugate"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2225255Z [36;1mgit config --global --add safe.directory "/home/runner/work/conjugate/conjugate"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2225740Z [36;1mgit config --global --add safe.directory "$GITHUB_WORKSPACE"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2254957Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2255269Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2255504Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2255906Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2256300Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2256662Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2257034Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2257377Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2257669Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2361188Z ##[group]Run CC_FORK="false"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2361543Z [36;1mCC_FORK="false"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2362040Z [36;1mif [ -n "$GITHUB_EVENT_PULL_REQUEST_HEAD_REPO_FULL_NAME" ] && [ "$GITHUB_EVENT_PULL_REQUEST_HEAD_REPO_FULL_NAME" != "$GITHUB_REPOSITORY" ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2362571Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2362797Z [36;1m  echo -e "\033[0;32m==>\033[0m Fork detected"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2363065Z [36;1m  CC_FORK="true"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2363258Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2363457Z [36;1mecho "CC_FORK=$CC_FORK" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2392476Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2392797Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2393052Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2393460Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2393839Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2394178Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2394525Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2394883Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2395357Z   GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2395637Z   GITHUB_EVENT_PULL_REQUEST_HEAD_REPO_FULL_NAME: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2395928Z   GITHUB_REPOSITORY: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2396168Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2499830Z ##[group]Run actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2500178Z with:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2500863Z   script: if (process.env.CC_USE_OIDC === 'true' && process.env.CC_FORK != 'true') {
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	  const id_token = await core.getIDToken(process.env.CC_OIDC_AUDIENCE)
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	  return id_token
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2501867Z   github-token: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2502075Z   debug: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2502269Z   user-agent: actions/github-script
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2502524Z   result-encoding: json
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2502723Z   retries: 0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2502929Z   retry-exempt-status-codes: 400,401,403,404,422
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2503190Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2503428Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2503836Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2504221Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2504560Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2504900Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2505241Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2505520Z   CC_FORK: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2505728Z   CC_OIDC_AUDIENCE: https://codecov.io
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2505959Z   CC_USE_OIDC: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.2506147Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3432477Z ##[group]Run if [ "false" == 'true' ] && [ "$CC_FORK" != 'true' ];
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3432874Z [36;1mif [ "false" == 'true' ] && [ "$CC_FORK" != 'true' ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3433146Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3433369Z [36;1m  echo "CC_TOKEN=$CC_OIDC_TOKEN" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3433664Z [36;1melif [ -n "" ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3433852Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3434074Z [36;1m  echo -e "\033[0;32m==>\033[0m Token set from env"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3434357Z [36;1m    echo "CC_TOKEN=" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3434596Z [36;1melse[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3434946Z [36;1m  if [ -n "***" ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3435145Z [36;1m  then[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3435380Z [36;1m    echo -e "\033[0;32m==>\033[0m Token set from input"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3435800Z [36;1m    CC_TOKEN=$(echo "***" | tr -d '\n')[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3436088Z [36;1m    echo "CC_TOKEN=$CC_TOKEN" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3436344Z [36;1m  fi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3436512Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3469807Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3470125Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3470378Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3470809Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3471500Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3471881Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3472238Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3472584Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3472879Z   CC_FORK: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3473058Z   CC_OIDC_TOKEN: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3473265Z   CC_OIDC_AUDIENCE: https://codecov.io
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3473505Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3524882Z [0;32m==>[0m Token set from input
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3562548Z ##[group]Run if [ -z "$CC_BRANCH" ] && [ -z "$CC_TOKEN" ] && [ "$CC_FORK" == 'true' ]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3562980Z [36;1mif [ -z "$CC_BRANCH" ] && [ -z "$CC_TOKEN" ] && [ "$CC_FORK" == 'true' ][0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3563294Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3563659Z [36;1m  echo -e "\033[0;32m==>\033[0m Fork detected, setting branch to $GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3564301Z [36;1m  TOKENLESS="$GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3564631Z [36;1m  CC_BRANCH="$GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3564944Z [36;1m  echo "TOKENLESS=$TOKENLESS" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3565201Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3565359Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3565564Z [36;1mecho "CC_BRANCH=$CC_BRANCH" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3594627Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3594944Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3595190Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3595591Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3595985Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3596329Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3596675Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3597020Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3597309Z   CC_FORK: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3597582Z   CC_TOKEN: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3597758Z   CC_BRANCH: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3597945Z   GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3598218Z   GITHUB_EVENT_PULL_REQUEST_HEAD_REPO_FULL_NAME: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3598502Z   GITHUB_REPOSITORY: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3598742Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3668310Z ##[group]Run if [ -z "$CC_SHA" ];
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3668596Z [36;1mif [ -z "$CC_SHA" ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3668808Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3669026Z [36;1m  CC_SHA="$GITHUB_EVENT_PULL_REQUEST_HEAD_SHA"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3669292Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3669504Z [36;1mif [ -z "$CC_PR" ] && [ "$CC_FORK" == 'true' ];[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3669769Z [36;1mthen[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3669970Z [36;1m  CC_PR="$GITHUB_EVENT_NUMBER"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3670196Z [36;1mfi[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3670379Z [36;1m[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3670571Z [36;1mecho "CC_SHA=$CC_SHA" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3670842Z [36;1mecho "CC_PR=$CC_PR" >> "$GITHUB_ENV"[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3700427Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3700738Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3701210Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3701655Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3702052Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3702419Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3702775Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3703117Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3703405Z   CC_FORK: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3703698Z   CC_TOKEN: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3703866Z   CC_BRANCH: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3704029Z   CC_PR: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3704178Z   CC_SHA: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3704344Z   GITHUB_EVENT_NAME: push
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3704547Z   GITHUB_EVENT_NUMBER: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3704747Z   GITHUB_EVENT_PULL_REQUEST_HEAD_SHA: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3705010Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3788078Z ##[group]Run ${GITHUB_ACTION_PATH}/dist/codecov.sh
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3788424Z [36;1m${GITHUB_ACTION_PATH}/dist/codecov.sh[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3817688Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3818009Z env:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3818258Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3818659Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib/pkgconfig
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3819065Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3819417Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3819942Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.11/x64
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3820291Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.11/x64/lib
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3820583Z   CC_FORK: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3820855Z   CC_TOKEN: ***
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3821266Z   CC_BRANCH: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3821440Z   CC_SHA: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3821603Z   CC_PR: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3821760Z   CC_BASE_SHA: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3821924Z   CC_BINARY: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3822088Z   CC_BUILD: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3822245Z   CC_BUILD_URL: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3822560Z   CC_CODE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3822729Z   CC_DIR: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3822897Z   CC_DISABLE_FILE_FIXES: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3823123Z   CC_DISABLE_SEARCH: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3823325Z   CC_DISABLE_TELEM: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3823523Z   CC_DRY_RUN: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3823708Z   CC_ENTERPRISE_URL: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3823885Z   CC_ENV: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824043Z   CC_EXCLUDES: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824221Z   CC_FAIL_ON_ERROR: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824417Z   CC_FILES: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824581Z   CC_FLAGS: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824730Z   CC_FORCE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3824891Z   CC_GCOV_ARGS: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3825066Z   CC_GCOV_EXECUTABLE: gcov
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3825271Z   CC_GCOV_IGNORE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3825452Z   CC_GCOV_INCLUDE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3825627Z   CC_GIT_SERVICE: github
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3825836Z   CC_HANDLE_NO_REPORTS_FOUND: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826065Z   CC_JOB_CODE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826229Z   CC_LEGACY: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826408Z   CC_NAME: 3.13
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826576Z   CC_NETWORK_FILTER: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826770Z   CC_NETWORK_PREFIX: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3826963Z   CC_NETWORK_ROOT_FOLDER: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3827151Z   CC_OS: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3827320Z   CC_PARENT_SHA: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3827494Z   CC_PLUGINS: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3827679Z   CC_RECURSE_SUBMODULES: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3827889Z   CC_REPORT_TYPE: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3828078Z   CC_RUN_CMD: upload-coverage
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3828292Z   CC_SERVICE: github
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3828478Z   CC_SKIP_VALIDATION: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3828694Z   CC_SLUG: williambdean/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3828921Z   CC_SWIFT_PROJECT: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3829099Z   CC_USE_PYPI: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3829275Z   CC_VERBOSE: false
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3829443Z   CC_VERSION: latest
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3829617Z   CC_YML_PATH: 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3829785Z ##[endgroup]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3902362Z      _____          _
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3902773Z     / ____|        | |
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3903143Z    | |     ___   __| | ___  ___ _____   __
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3903593Z    | |    / _ \ / _` |/ _ \/ __/ _ \ \ / /
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3904024Z    | |___| (_) | (_| |  __/ (_| (_) \ V /
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3904528Z     \_____\___/ \__,_|\___|\___\___/ \_/
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3905256Z                            [0;31m Wrapper-0.2.7[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3905684Z                            
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3961561Z [0;32m==>[0m Detected [0;36mlinux[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.3962492Z [0;32m ->[0m Downloading [0;36mhttps://cli.codecov.io/latest/linux/codecov[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.4015462Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.4016128Z                                  Dload  Upload   Total   Spent    Left  Speed
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.4016429Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.5626720Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.5627521Z 100 10.6M  100 10.6M    0     0  66.0M      0 --:--:-- --:--:-- --:--:-- 66.1M
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.5662935Z [0;32m==>[0m Finishing downloading [0;36mlinux:latest[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.6104061Z       Version: [0;36mv11.2.6[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.6104492Z  
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.6178206Z gpg: directory '/home/runner/.gnupg' created
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.6183220Z gpg: keybox '/home/runner/.gnupg/pubring.kbx' created
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.8944645Z gpg: /home/runner/.gnupg/trustdb.gpg: trustdb created
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.8945713Z gpg: key 806BB28AED779869: public key "Codecov Uploader (Codecov Uploader Verification Key) <security@codecov.io>" imported
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9065548Z gpg: Total number processed: 1
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9066011Z gpg:               imported: 1
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9072809Z [0;32m==>[0m Verifying GPG signature integrity
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9073894Z [0;32m ->[0m Downloading [0;36mhttps://cli.codecov.io/latest/linux/codecov.SHA256SUM[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9075342Z [0;32m ->[0m Downloading [0;36mhttps://cli.codecov.io/latest/linux/codecov.SHA256SUM.sig[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9076116Z  
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9893488Z gpg: Signature made Fri Dec  5 15:31:48 2025 UTC
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9894021Z gpg:                using RSA key 27034E7FDB850E0BBC2C62FF806BB28AED779869
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9896124Z gpg: Good signature from "Codecov Uploader (Codecov Uploader Verification Key) <security@codecov.io>" [unknown]
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9897218Z gpg: WARNING: This key is not certified with a trusted signature!
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9897749Z gpg:          There is no indication that the signature belongs to the owner.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:07.9898308Z Primary key fingerprint: 2703 4E7F DB85 0E0B BC2C  62FF 806B B28A ED77 9869
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.0603591Z codecov: OK
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.0614627Z [0;32m==>[0m CLI integrity verified
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.0614852Z 
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.1237202Z [0;32m ->[0m Token length: 36
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.1237764Z [0;32m==>[0m Running upload-coverage
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.1247087Z       [0;36m./codecov  upload-coverage -t <redacted> --git-service github --slug williambdean/conjugate --gcov-executable gcov --name 3.13[0m
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.4749246Z info - 2026-01-06 09:20:08,474 -- ci service found: github-actions
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.5173695Z warning - 2026-01-06 09:20:08,517 -- xcrun is not installed or can't be found.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.6456073Z warning - 2026-01-06 09:20:08,645 -- No gcov data found.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.6460374Z warning - 2026-01-06 09:20:08,645 -- coverage.py is not installed or can't be found.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.6648537Z info - 2026-01-06 09:20:08,664 -- Found 1 coverage files to report
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.6649285Z info - 2026-01-06 09:20:08,664 -- > /home/runner/work/conjugate/conjugate/coverage.xml
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:08.9413454Z info - 2026-01-06 09:20:08,940 -- Your upload is now processing. When finished, results will be available at: https://app.codecov.io/github/wd60622/conjugate/commit/4b272041f3d38b67741de3b54da138d747e4e341
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.0892017Z info - 2026-01-06 09:20:09,088 -- Process Upload complete
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.2370454Z Post job cleanup.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4022590Z Post job cleanup.
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4808823Z [command]/usr/bin/git version
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4879475Z git version 2.52.0
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4911538Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/e6b063ed-5528-46f1-9b73-11af9d6f51df/.gitconfig'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4920887Z Temporarily overriding HOME='/home/runner/work/_temp/e6b063ed-5528-46f1-9b73-11af9d6f51df' before making global git config changes
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4922026Z Adding repository directory to the temporary git global config as a safe directory
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4927116Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/conjugate/conjugate
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4960181Z Removing SSH command configuration
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.4966288Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5001282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5231676Z Removing HTTP extra header
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5236569Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5270144Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5513264Z Removing includeIf entries pointing to credentials config files
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5520929Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5547634Z includeif.gitdir:/home/runner/work/conjugate/conjugate/.git.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5548960Z includeif.gitdir:/home/runner/work/conjugate/conjugate/.git/worktrees/*.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5550697Z includeif.gitdir:/github/workspace/.git.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5551567Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5559024Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/conjugate/conjugate/.git.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5582864Z /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5595627Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/conjugate/conjugate/.git.path /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5632137Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/conjugate/conjugate/.git/worktrees/*.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5655276Z /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5666246Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/conjugate/conjugate/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5701650Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5725149Z /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5734979Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5768496Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5791841Z /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5801208Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.5836121Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.6078731Z Removing credentials config '/home/runner/work/_temp/git-credentials-6f174cec-d026-4067-aed7-1f12d9197a24.config'
+test (ubuntu-latest, 3.13)	UNKNOWN STEP	2026-01-06T09:20:09.6229637Z Cleaning up orphan processes

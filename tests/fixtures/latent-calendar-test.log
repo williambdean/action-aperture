@@ -1,0 +1,382 @@
+test (windows-latest, 3.10)	UNKNOWN STEP	﻿2026-02-03T18:51:29.0088257Z Current runner version: '2.331.0'
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0125080Z ##[group]Runner Image Provisioner
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0126149Z Hosted Compute Agent
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0127076Z Version: 20260123.484
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0127935Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0128978Z Build Date: 2026-01-23T19:41:17Z
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0130028Z Worker ID: {9c4aebb4-567d-4c5b-8e58-32ca171314e7}
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0131080Z Azure Region: eastus2
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0131849Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0134385Z ##[group]Operating System
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0135394Z Microsoft Windows Server 2025
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0136245Z 10.0.26100
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0136941Z Datacenter
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0137581Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0138334Z ##[group]Runner Image
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0139103Z Image: windows-2025
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0140020Z Version: 20260127.11.2
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0142250Z Included Software: https://github.com/actions/runner-images/blob/win25/20260127.11/images/windows/Windows2025-Readme.md
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0145142Z Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20260127.11
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0146664Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0148332Z ##[group]GITHUB_TOKEN Permissions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0150820Z Contents: read
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0151695Z Metadata: read
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0152568Z Packages: read
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0153460Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0156359Z Secret source: Actions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0157366Z Prepare workflow directory
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0559490Z Prepare all required actions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.0597949Z Getting action download info
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.2982586Z Download action repository 'actions/checkout@v6' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.4274243Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:29.8546081Z Complete job name: test (windows-latest, 3.10)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0566189Z ##[group]Run actions/checkout@v6
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0567475Z with:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0568086Z   repository: williambdean/latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0569158Z   token: ***
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0569715Z   ssh-strict: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0570291Z   ssh-user: git
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0570893Z   persist-credentials: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0571571Z   clean: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0572159Z   sparse-checkout-cone-mode: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0573234Z   fetch-depth: 1
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0573832Z   fetch-tags: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0574432Z   show-progress: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0575033Z   lfs: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0575573Z   submodules: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0576172Z   set-safe-directory: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.0577192Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.2197197Z Syncing repository: williambdean/latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.2200480Z ##[group]Getting Git version info
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.2201664Z Working directory is 'D:\a\latent-calendar\latent-calendar'
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:30.3138311Z [command]"C:\Program Files\Git\bin\git.exe" version
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.0518256Z git version 2.52.0.windows.1
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.0569617Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.0588121Z Temporarily overriding HOME='D:\a\_temp\14ce60a1-3ff4-4fa3-8e10-a4a0a6c946eb' before making global git config changes
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.0589865Z Adding repository directory to the temporary git global config as a safe directory
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.0599029Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\latent-calendar\latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.1640794Z Deleting the contents of 'D:\a\latent-calendar\latent-calendar'
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.1647858Z ##[group]Initializing the repository
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.1656127Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\latent-calendar\latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.3154921Z Initialized empty Git repository in D:/a/latent-calendar/latent-calendar/.git/
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.3199112Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/williambdean/latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.3950539Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.3951213Z ##[group]Disabling automatic garbage collection
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.3959730Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.4252537Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.4253071Z ##[group]Setting up auth
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.4253873Z Removing SSH command configuration
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.4264857Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:31.4565950Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:33.8239590Z Removing HTTP extra header
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:33.8251611Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:33.8541814Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.4098715Z Removing includeIf entries pointing to credentials config files
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.4111740Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.4414535Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.9374732Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.9683960Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/latent-calendar/latent-calendar/.git.path D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:34.9997695Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/latent-calendar/latent-calendar/.git/worktrees/*.path D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:35.0338245Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:35.0642545Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:35.0980027Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:35.0980879Z ##[group]Fetching the repository
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:35.1001420Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +080acef04441e2c3a2f1bc177c9ffa7348d0c01c:refs/remotes/origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:37.9516766Z From https://github.com/williambdean/latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:37.9517771Z  * [new ref]         080acef04441e2c3a2f1bc177c9ffa7348d0c01c -> origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:37.9945353Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0382891Z   origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0425963Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0777918Z 080acef04441e2c3a2f1bc177c9ffa7348d0c01c
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0809561Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0810511Z ##[group]Determining the checkout info
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0811720Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.0820484Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.1432583Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.1733965Z ##[group]Checking out the ref
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:38.1747514Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B latent-calendar-sampler refs/remotes/origin/latent-calendar-sampler
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.1234490Z branch 'latent-calendar-sampler' set up to track 'origin/latent-calendar-sampler'.
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.1280380Z Switched to a new branch 'latent-calendar-sampler'
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.1381902Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2014604Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2319387Z 080acef04441e2c3a2f1bc177c9ffa7348d0c01c
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2775229Z ##[group]Run actions/setup-python@v5
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2775551Z with:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2775719Z   python-version: 3.10
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2775923Z   check-latest: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2776237Z   token: ***
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2776515Z   update-environment: true
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2776724Z   allow-prereleases: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2776959Z   freethreaded: false
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.2777132Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5434343Z ##[group]Installed versions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5580596Z Successfully set up CPython (3.10.11)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5581300Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5852692Z ##[group]Run python -m pip install --upgrade pip
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5853160Z [36;1mpython -m pip install --upgrade pip[0m
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.5853445Z [36;1mpip install tox tox-gh-actions[0m
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7029733Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7030225Z env:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7030485Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7030966Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.10.11\x64/lib/pkgconfig
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7031414Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7031826Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7032203Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:39.7032508Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.0015594Z Requirement already satisfied: pip in c:\hostedtoolcache\windows\python\3.10.11\x64\lib\site-packages (25.3)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.2688859Z Collecting pip
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.3168963Z   Downloading pip-26.0-py3-none-any.whl.metadata (4.7 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.3403127Z Downloading pip-26.0-py3-none-any.whl (1.8 MB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.4731679Z    ---------------------------------------- 1.8/1.8 MB 13.9 MB/s  0:00:00
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.5393635Z Installing collected packages: pip
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.5395508Z   Attempting uninstall: pip
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.5403901Z     Found existing installation: pip 25.3
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.7246513Z     Uninstalling pip-25.3:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:56.7569898Z       Successfully uninstalled pip-25.3
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:51:59.9260534Z Successfully installed pip-26.0
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.3698780Z Collecting tox
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.4117282Z   Downloading tox-4.34.1-py3-none-any.whl.metadata (3.5 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.5023858Z Collecting tox-gh-actions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.5116206Z   Downloading tox_gh_actions-3.5.0-py3-none-any.whl.metadata (12 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.6076572Z Collecting cachetools>=6.2.4 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.6167933Z   Downloading cachetools-7.0.0-py3-none-any.whl.metadata (5.6 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.6935123Z Collecting chardet>=5.2 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.7018665Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.7769838Z Collecting colorama>=0.4.6 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:01.7884942Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.0694380Z Collecting filelock>=3.20.2 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.0781358Z   Downloading filelock-3.20.3-py3-none-any.whl.metadata (2.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.1925752Z Collecting packaging>=25 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.2007503Z   Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.2828243Z Collecting platformdirs>=4.5.1 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.2916414Z   Downloading platformdirs-4.5.1-py3-none-any.whl.metadata (12 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.3698891Z Collecting pluggy>=1.6 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.3782981Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.4612206Z Collecting pyproject-api>=1.10 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.4723331Z   Downloading pyproject_api-1.10.0-py3-none-any.whl.metadata (2.7 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.5767269Z Collecting tomli>=2.3 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.5855081Z   Downloading tomli-2.4.0-py3-none-any.whl.metadata (10 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.6664400Z Collecting typing-extensions>=4.15 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.6749435Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.8148376Z Collecting virtualenv>=20.35.4 (from tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.8231885Z   Downloading virtualenv-20.36.1-py3-none-any.whl.metadata (4.7 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.9137897Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.35.4->tox)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.9218005Z   Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:02.9812372Z Downloading tox-4.34.1-py3-none-any.whl (176 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.0175336Z Downloading tox_gh_actions-3.5.0-py3-none-any.whl (9.9 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.0692245Z Downloading cachetools-7.0.0-py3-none-any.whl (13 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.1084602Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.1527874Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.1896762Z Downloading filelock-3.20.3-py3-none-any.whl (16 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.2219729Z Downloading packaging-26.0-py3-none-any.whl (74 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.2626799Z Downloading platformdirs-4.5.1-py3-none-any.whl (18 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.3154841Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.3381653Z Downloading pyproject_api-1.10.0-py3-none-any.whl (13 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.3744848Z Downloading tomli-2.4.0-py3-none-any.whl (14 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.4111574Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.4491191Z Downloading virtualenv-20.36.1-py3-none-any.whl (6.0 MB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.5151610Z    ---------------------------------------- 6.0/6.0 MB 91.2 MB/s  0:00:00
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.5249520Z Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:03.6584469Z Installing collected packages: distlib, typing-extensions, tomli, pluggy, platformdirs, packaging, filelock, colorama, chardet, cachetools, virtualenv, pyproject-api, tox, tox-gh-actions
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:05.9916139Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:05.9991269Z Successfully installed cachetools-7.0.0 chardet-5.2.0 colorama-0.4.6 distlib-0.4.0 filelock-3.20.3 packaging-26.0 platformdirs-4.5.1 pluggy-1.6.0 pyproject-api-1.10.0 tomli-2.4.0 tox-4.34.1 tox-gh-actions-3.5.0 typing-extensions-4.15.0 virtualenv-20.36.1
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0679081Z ##[group]Run tox
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0679336Z [36;1mtox[0m
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0748839Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0749147Z env:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0749387Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0749804Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.10.11\x64/lib/pkgconfig
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0750251Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0750631Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0751015Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.10.11\x64
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:07.0751306Z ##[endgroup]
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:10.5950128Z py: install_deps> python -I -m pip install polars pymc pytest pytest-cov pytest-mpl
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7958184Z [31mERROR: Operation cancelled by user
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7958432Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7960041Z Collecting polars
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7960454Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7960793Z   Downloading polars-1.37.1-py3-none-any.whl.metadata (10 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7961321Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7961462Z Collecting pymc
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7961673Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7961991Z   Downloading pymc-5.26.0-py3-none-any.whl.metadata (16 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7962507Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7962640Z Collecting pytest
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7963182Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7963506Z   Downloading pytest-9.0.2-py3-none-any.whl.metadata (7.6 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7963978Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7964124Z Collecting pytest-cov
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7964388Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7964719Z   Downloading pytest_cov-7.0.0-py3-none-any.whl.metadata (31 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7965267Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7965407Z Collecting pytest-mpl
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7965642Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7965967Z   Downloading pytest_mpl-0.18.0-py3-none-any.whl.metadata (3.5 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7966485Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7966713Z Collecting polars-runtime-32==1.37.1 (from polars)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7967128Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7967533Z   Downloading polars_runtime_32-1.37.1-cp310-abi3-win_amd64.whl.metadata (1.5 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7968163Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7968335Z Collecting arviz>=0.13.0 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7968632Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7968835Z   Downloading arviz-0.23.1-py3-none-any.whl.metadata (9.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969101Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969184Z Collecting cachetools>=4.2.1 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969358Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969529Z   Using cached cachetools-7.0.0-py3-none-any.whl.metadata (5.6 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969784Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7969867Z Collecting cloudpickle (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970018Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970185Z   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970452Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970528Z Collecting numpy>=1.25.0 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970692Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7970856Z   Downloading numpy-2.2.6-cp310-cp310-win_amd64.whl.metadata (60 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7971107Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7971187Z Collecting pandas>=0.24.0 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7971340Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7971501Z   Downloading pandas-2.3.3-cp310-cp310-win_amd64.whl.metadata (19 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7971767Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7972186Z INFO: pip is looking at multiple versions of pymc to determine which version is compatible with other requirements. This could take a while.
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7972673Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7972739Z Collecting pymc
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7972842Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7972984Z   Downloading pymc-5.25.1-py3-none-any.whl.metadata (16 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7973209Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7973304Z Collecting pytensor<2.32,>=2.31.7 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7973476Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7973651Z   Downloading pytensor-2.31.7-cp310-cp310-win_amd64.whl.metadata (7.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7973927Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7974005Z Collecting rich>=13.7.1 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7976513Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7976740Z   Downloading rich-14.3.2-py3-none-any.whl.metadata (18 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7976999Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7977081Z Collecting scipy>=1.4.1 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7977242Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7977424Z   Downloading scipy-1.15.3-cp310-cp310-win_amd64.whl.metadata (60 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7977683Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7977788Z Collecting threadpoolctl<4.0.0,>=3.1.0 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7978164Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7978482Z   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7978802Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7978919Z Collecting typing-extensions>=3.7.4 (from pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7979102Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7979285Z   Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7979566Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7980301Z Requirement already satisfied: setuptools>=59.0.0 in d:\a\latent-calendar\latent-calendar\.tox\py\lib\site-packages (from pytensor<2.32,>=2.31.7->pymc) (80.9.0)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7981556Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7981721Z Collecting filelock>=3.15 (from pytensor<2.32,>=2.31.7->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7982047Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7982334Z   Using cached filelock-3.20.3-py3-none-any.whl.metadata (2.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7982679Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7982808Z Collecting etuples (from pytensor<2.32,>=2.31.7->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7983016Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7983504Z   Downloading etuples-0.3.10-py3-none-any.whl.metadata (4.8 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7983799Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7984082Z Collecting logical-unification (from pytensor<2.32,>=2.31.7->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7984428Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7984651Z   Downloading logical_unification-0.4.7-py3-none-any.whl.metadata (15 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7984934Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985072Z Collecting miniKanren (from pytensor<2.32,>=2.31.7->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985285Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985448Z   Downloading minikanren-1.0.5-py3-none-any.whl.metadata (7.6 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985703Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985807Z Collecting cons (from pytensor<2.32,>=2.31.7->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7985996Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7986133Z   Downloading cons-0.4.7-py3-none-any.whl.metadata (3.8 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7986352Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7986432Z Collecting colorama>=0.4 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7986606Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7986775Z   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987027Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987114Z Collecting exceptiongroup>=1 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987289Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987461Z   Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987723Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987807Z Collecting iniconfig>=1.0.1 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7987966Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988119Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988362Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988446Z Collecting packaging>=22 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988601Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988751Z   Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7988993Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989069Z Collecting pluggy<2,>=1.5 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989224Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989371Z   Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989602Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989683Z Collecting pygments>=2.7.2 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989849Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7989994Z   Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990233Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990305Z Collecting tomli>=1 (from pytest)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990453Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990583Z   Using cached tomli-2.4.0-py3-none-any.whl.metadata (10 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990802Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7990965Z Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7991216Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7991912Z   Downloading coverage-7.13.3-cp310-cp310-win_amd64.whl.metadata (8.7 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7992229Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7992337Z Collecting matplotlib>=3.3.3 (from pytest-mpl)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7992525Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7992713Z   Downloading matplotlib-3.10.8-cp310-cp310-win_amd64.whl.metadata (52 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7992990Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993077Z Collecting Jinja2>=2.10.2 (from pytest-mpl)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993259Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993411Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993646Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993733Z Collecting Pillow>=8.1.1 (from pytest-mpl)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7993905Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7994071Z   Downloading pillow-12.1.0-cp310-cp310-win_amd64.whl.metadata (9.0 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7994330Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7994448Z Collecting xarray>=2023.7.0 (from arviz>=0.13.0->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7994645Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7994792Z   Downloading xarray-2025.6.1-py3-none-any.whl.metadata (12 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995144Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995259Z Collecting h5netcdf>=1.0.2 (from arviz>=0.13.0->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995454Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995601Z   Downloading h5netcdf-1.8.1-py3-none-any.whl.metadata (15 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995846Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7995930Z Collecting h5py (from arviz>=0.13.0->pymc)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7996092Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7996256Z   Downloading h5py-3.15.1-cp310-cp310-win_amd64.whl.metadata (3.1 kB)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7996503Z 
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.7996896Z py: exit 1 (7.19 seconds) D:\a\latent-calendar\latent-calendar> python -I -m pip install polars pymc pytest pytest-cov pytest-mpl pid=8124
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.8006318Z ROOT: [7696] KeyboardInterrupt - teardown started
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.8007654Z   py: FAIL code 1 (8.53 seconds)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.8007988Z   evaluation failed :( (8.56 seconds)
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.9673961Z [39m
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:17.9865720Z ##[error]The operation was canceled.
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:18.3565231Z Post job cleanup.
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.1963571Z [command]"C:\Program Files\Git\bin\git.exe" version
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2343583Z git version 2.52.0.windows.1
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2432838Z Temporarily overriding HOME='D:\a\_temp\33894301-417a-45cf-8589-f239e2f71b50' before making global git config changes
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2434711Z Adding repository directory to the temporary git global config as a safe directory
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2448716Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\latent-calendar\latent-calendar
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2858472Z Removing SSH command configuration
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.2870716Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.3227654Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.8908070Z Removing HTTP extra header
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.8918512Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:19.9229797Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5103722Z Removing includeIf entries pointing to credentials config files
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5115291Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5376348Z includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5377978Z includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git/worktrees/*.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5378787Z includeif.gitdir:/github/workspace/.git.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5379405Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5422862Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5694688Z D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.5736079Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git.path D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6038175Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git/worktrees/*.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6305569Z D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6344970Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/latent-calendar/latent-calendar/.git/worktrees/*.path D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6646952Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6904031Z /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.6943022Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.7249945Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.7511340Z /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.7552961Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:20.7849590Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:21.3294288Z Removing credentials config 'D:\a\_temp\git-credentials-ca662ef8-3b00-4e22-9c6b-868a521ac885.config'
+test (windows-latest, 3.10)	UNKNOWN STEP	2026-02-03T18:52:21.3498977Z Cleaning up orphan processes
