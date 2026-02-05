@@ -2,6 +2,8 @@
 
 **Action Aperture** is a terminal-based UI (TUI) for inspecting and analyzing GitHub Actions logs. View test results, warnings, coverage reports, and raw logs in an intuitive, keyboard-driven interface.
 
+![Preview](./assets/preview.svg)
+
 ## Features
 
 - 📊 **Intelligent Log Parsing**: Automatically detects and parses different log formats
