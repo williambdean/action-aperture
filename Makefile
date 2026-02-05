@@ -6,3 +6,6 @@ lint:
 
 format:
 	uvx ruff format .
+
+test: 
+	uv run --group dev pytest
