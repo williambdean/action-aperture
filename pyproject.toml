@@ -27,3 +27,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/aperture"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
