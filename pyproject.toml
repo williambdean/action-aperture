@@ -2,11 +2,30 @@
 name = "action-aperture"
 version = "0.1.0"
 description = "Terminal UI for inspecting GitHub Actions logs"
+authors = [{ name = "Will Dean", email = "wd60622@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["github-actions", "tui", "logs", "pytest", "ci", "testing"]
 dependencies = [
     "textual>=0.70.0",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 
 [project.optional-dependencies]
@@ -31,4 +50,15 @@ packages = ["src/aperture"]
 [dependency-groups]
 dev = [
     "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-v",
+    "--cov=src/aperture",
+    "--cov-report=xml",
+    "--cov-report=term-missing",
+    "--durations=50",
+    "--color=yes",
 ]
