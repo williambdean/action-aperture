@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "pyproject.toml"
+      - "tests/**"
+  pull_request:
+    paths:
+      - "src/**"
+      - "pyproject.toml"
+      - "tests/**"
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: latest
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: uv sync --locked --group dev
+
+      - name: Run tests
+        run: uv run --group dev pytest
