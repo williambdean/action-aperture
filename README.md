@@ -21,7 +21,7 @@
 uv tool install action-aperture
 ```
 
-Or skip entirely with:
+Or skip install entirely with:
 
 ```terminal
 uvx --from action-aperture actap
