@@ -28,10 +28,36 @@ class LoadingScreen(Screen):
     LoadingScreen {
         align: center middle;
     }
+
+    #loading-label {
+        text-align: center;
+    }
     """
 
+    def __init__(self, message: str = "Loading") -> None:
+        super().__init__()
+        self.message = message
+        self._spinner_symbols = cycle("⠋⠙⠹⠸⠼⠴⠦⠧")
+        self._spinner_frame = next(self._spinner_symbols)
+
     def compose(self) -> ComposeResult:
-        yield Label("Loading...", id="loading-label")
+        yield Label(f"{self._spinner_frame} {self.message}…", id="loading-label")
+
+    async def on_mount(self) -> None:
+        """Start spinner animation when screen is mounted."""
+        self.set_interval(0.1, self._advance_spinner)
+
+    def _advance_spinner(self) -> None:
+        """Advance loading spinner animation."""
+        self._spinner_frame = next(self._spinner_symbols)
+        loading_label = self.query_one("#loading-label", Label)
+        loading_label.update(f"{self._spinner_frame} {self.message}…")
+
+    def update_message(self, message: str) -> None:
+        """Update the loading message."""
+        self.message = message
+        loading_label = self.query_one("#loading-label", Label)
+        loading_label.update(f"{self._spinner_frame} {message}…")
 
 
 class ConfirmationScreen(Screen[bool]):
