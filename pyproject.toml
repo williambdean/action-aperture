@@ -1,6 +1,6 @@
 [project]
 name = "action-aperture"
-version = "0.1.0"
+version = "0.2.0"
 description = "Terminal UI for inspecting GitHub Actions logs"
 authors = [{ name = "Will Dean", email = "wd60622@gmail.com" }]
 readme = "README.md"
