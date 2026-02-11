@@ -27,12 +27,16 @@ class ApertureApp(App):
         run_id: str | None = None,
         run_url: str | None = None,
         job_id: int | None = None,
+        workflow: str | None = None,
+        latest: bool = False,
     ) -> None:
         super().__init__()
         self.repo = repo
         self.run_id = run_id
         self.run_url = run_url
         self.job_id = job_id
+        self.workflow = workflow
+        self.latest = latest
         self.selected_workflow: str | None = None
 
     def on_mount(self) -> None:
@@ -40,6 +44,14 @@ class ApertureApp(App):
         if self.run_id or self.run_url:
             # Direct run ID/URL provided
             self.run_worker(self._load_run_and_jobs(workflow_name=None))
+        elif self.workflow and self.latest:
+            # Auto-select latest run for specified workflow
+            self.selected_workflow = self.workflow
+            self.run_worker(self._load_latest_run_and_jobs(self.workflow))
+        elif self.workflow:
+            # Skip workflow picker, go directly to run picker for specified workflow
+            self.selected_workflow = self.workflow
+            self.run_worker(self._load_runs(self.workflow))
         else:
             # Need to pick a workflow
             self.run_worker(self._load_workflows())
@@ -135,6 +147,48 @@ class ApertureApp(App):
             JobViewScreen(run_id, run_url, jobs, self.repo, None, initial_job)
         )
 
+    async def _load_latest_run_and_jobs(self, workflow_name: str) -> None:
+        """Load the latest successful run and its jobs for a specified workflow."""
+        try:
+            runs = await asyncio.to_thread(
+                fetch_runs, self.repo, workflow_name, limit=1
+            )
+            if not runs:
+                self.exit(
+                    message=f"No successful runs found for workflow '{workflow_name}'"
+                )
+                return
+
+            # Get the latest run (first in the list)
+            latest_run = runs[0]
+            jobs = await asyncio.to_thread(fetch_jobs, str(latest_run.id), self.repo)
+        except Exception as e:
+            self.exit(message=f"Failed to fetch latest run: {e}")
+            return
+
+        initial_job = (
+            next((job for job in jobs if job.id == self.job_id), None)
+            if self.job_id
+            else None
+        )
+
+        def handle_job_screen_dismiss(result: None = None) -> None:
+            # User pressed ESC from job view, go back to run picker for this workflow
+            self.push_screen(LoadingScreen())
+            self.run_worker(self._load_runs(workflow_name))
+
+        self.push_screen(
+            JobViewScreen(
+                str(latest_run.id),
+                latest_run.url,
+                jobs,
+                self.repo,
+                latest_run,
+                initial_job,
+            ),
+            handle_job_screen_dismiss,
+        )
+
 
 def parse_args() -> argparse.Namespace:
     """Parse command line arguments."""
@@ -145,6 +199,14 @@ def parse_args() -> argparse.Namespace:
     group.add_argument("--run-id", help="Workflow run ID to inspect")
     group.add_argument("--run-url", help="Workflow run URL to inspect")
     parser.add_argument("--job-id", type=int, help="Job ID to pre-select")
+    parser.add_argument(
+        "--workflow", help="Workflow name to select (skips workflow picker)"
+    )
+    parser.add_argument(
+        "--latest",
+        action="store_true",
+        help="Auto-select latest successful run (requires --workflow)",
+    )
     parser.add_argument(
         "--repo",
         help="Repository owner/name (e.g., owner/repo)",
@@ -160,11 +222,22 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     """Main entry point for Action Aperture."""
     args = parse_args()
+
+    # Validate argument combinations
+    if args.latest and not args.workflow:
+        print("Error: --latest requires --workflow to be specified")
+        return
+
     repo_arg = args.repo_positional or args.repo
     repo = resolve_repo(repo_arg)
 
     app = ApertureApp(
-        repo=repo, run_id=args.run_id, run_url=args.run_url, job_id=args.job_id
+        repo=repo,
+        run_id=args.run_id,
+        run_url=args.run_url,
+        job_id=args.job_id,
+        workflow=args.workflow,
+        latest=args.latest,
     )
     app.run()
 
