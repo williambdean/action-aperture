@@ -8,6 +8,7 @@ requires-python = ">=3.10"
 keywords = ["github-actions", "tui", "logs", "pytest", "ci", "testing"]
 dependencies = [
     "textual>=0.70.0",
+    "typer>=0.15.0",
 ]
 classifiers = [
     "Intended Audience :: Science/Research",
@@ -34,7 +35,7 @@ dev = [
 ]
 
 [project.scripts]
-actap = "aperture.tui:main"
+actap = "aperture.tui:app"
 
 [project.urls]
 Homepage = "https://github.com/williambdean/action-aperture"

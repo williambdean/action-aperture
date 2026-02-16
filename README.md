@@ -56,19 +56,31 @@ Specify a repository:
 actap owner/repo
 ```
 
+Or use options before the repository:
+
+```bash
+actap --workflow Test owner/repo
+```
+
 ### Advanced Options
 
 Open a specific workflow run:
 
 ```bash
-actap --run-id 123456789
-actap --run-url https://github.com/owner/repo/actions/runs/123456789
+actap --run-id 123456789 owner/repo
+actap --run-url https://github.com/owner/repo/actions/runs/123456789 owner/repo
 ```
 
 Pre-select a specific job:
 
 ```bash
-actap --run-id 123456789 --job-id 987654321
+actap --run-id 123456789 --job-id 987654321 owner/repo
+```
+
+Use the latest successful run for a workflow:
+
+```bash
+actap --workflow Test --latest owner/repo
 ```
 
 ### Environment Variables
