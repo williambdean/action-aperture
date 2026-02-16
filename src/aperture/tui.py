@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
-import argparse
 import asyncio
 
+import typer
+from rich.console import Console
 from textual.app import App
+from typer import Context
 
 from .core import (
     RunInfo,
@@ -16,6 +18,59 @@ from .core import (
     resolve_repo,
 )
 from .ui import JobViewScreen, LoadingScreen, RunPickerScreen, WorkflowPickerScreen
+
+app = typer.Typer(help="Action Aperture - GitHub Actions log viewer")
+console = Console()
+
+
+@app.callback(
+    invoke_without_command=True, context_settings={"allow_interspersed_args": False}
+)
+def main(
+    ctx: Context,
+    repo: str | None = typer.Argument(
+        None,
+        help="Repository owner/name (e.g., owner/repo). If omitted, auto-detected from git.",
+    ),
+    run_id: str | None = typer.Option(
+        None, "--run-id", help="Workflow run ID to inspect"
+    ),
+    run_url: str | None = typer.Option(
+        None, "--run-url", help="Workflow run URL to inspect"
+    ),
+    job_id: int | None = typer.Option(None, "--job-id", help="Job ID to pre-select"),
+    workflow: str | None = typer.Option(
+        None, "--workflow", help="Workflow name to select (skips workflow picker)"
+    ),
+    latest: bool = typer.Option(
+        False,
+        "--latest",
+        help="Auto-select latest successful run (requires --workflow)",
+    ),
+) -> None:
+    """
+    Action Aperture - GitHub Actions log viewer.
+
+    If no subcommand is provided, launches the interactive TUI.
+    """
+    if ctx.invoked_subcommand is None:
+        if latest and not workflow:
+            console.print(
+                "[red]Error:[/red] --latest requires --workflow to be specified"
+            )
+            raise typer.Exit(1)
+
+        resolved_repo = resolve_repo(repo)
+
+        aperture_app = ApertureApp(
+            repo=resolved_repo,
+            run_id=run_id,
+            run_url=run_url,
+            job_id=job_id,
+            workflow=workflow,
+            latest=latest,
+        )
+        aperture_app.run()
 
 
 class ApertureApp(App):
@@ -190,57 +245,47 @@ class ApertureApp(App):
         )
 
 
-def parse_args() -> argparse.Namespace:
-    """Parse command line arguments."""
-    parser = argparse.ArgumentParser(
-        description="Action Aperture - Interactive viewer for GitHub Actions logs"
-    )
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument("--run-id", help="Workflow run ID to inspect")
-    group.add_argument("--run-url", help="Workflow run URL to inspect")
-    parser.add_argument("--job-id", type=int, help="Job ID to pre-select")
-    parser.add_argument(
-        "--workflow", help="Workflow name to select (skips workflow picker)"
-    )
-    parser.add_argument(
+@app.command()
+def tui(
+    repo: str | None = typer.Argument(
+        None,
+        help="Repository owner/name (e.g., owner/repo). If omitted, auto-detected from git.",
+    ),
+    run_id: str | None = typer.Option(
+        None, "--run-id", help="Workflow run ID to inspect"
+    ),
+    run_url: str | None = typer.Option(
+        None, "--run-url", help="Workflow run URL to inspect"
+    ),
+    job_id: int | None = typer.Option(None, "--job-id", help="Job ID to pre-select"),
+    workflow: str | None = typer.Option(
+        None, "--workflow", help="Workflow name to select (skips workflow picker)"
+    ),
+    latest: bool = typer.Option(
+        False,
         "--latest",
-        action="store_true",
         help="Auto-select latest successful run (requires --workflow)",
+    ),
+) -> None:
+    """
+    Launch the interactive TUI for inspecting GitHub Actions logs.
+    """
+    if latest and not workflow:
+        console.print("[red]Error:[/red] --latest requires --workflow to be specified")
+        raise typer.Exit(1)
+
+    resolved_repo = resolve_repo(repo)
+
+    aperture_app = ApertureApp(
+        repo=resolved_repo,
+        run_id=run_id,
+        run_url=run_url,
+        job_id=job_id,
+        workflow=workflow,
+        latest=latest,
     )
-    parser.add_argument(
-        "--repo",
-        help="Repository owner/name (e.g., owner/repo)",
-    )
-    parser.add_argument(
-        "repo_positional",
-        nargs="?",
-        help="Repository owner/name (e.g., owner/repo)",
-    )
-    return parser.parse_args()
-
-
-def main() -> None:
-    """Main entry point for Action Aperture."""
-    args = parse_args()
-
-    # Validate argument combinations
-    if args.latest and not args.workflow:
-        print("Error: --latest requires --workflow to be specified")
-        return
-
-    repo_arg = args.repo_positional or args.repo
-    repo = resolve_repo(repo_arg)
-
-    app = ApertureApp(
-        repo=repo,
-        run_id=args.run_id,
-        run_url=args.run_url,
-        job_id=args.job_id,
-        workflow=args.workflow,
-        latest=args.latest,
-    )
-    app.run()
+    aperture_app.run()
 
 
 if __name__ == "__main__":
-    main()
+    app()
